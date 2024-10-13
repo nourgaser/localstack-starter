@@ -1,0 +1,12 @@
+services:
+  localstack:
+    image: docker.io/localstack/localstack:3.1
+    ports:
+      - "4566:4566"
+    env_file:
+      - init/.env
+    network_mode: host
+    volumes:
+      - ./init:/etc/localstack/init/ready.d/:ro
+      - ./aws:/root/.aws:ro
+
