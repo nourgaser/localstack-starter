@@ -50,6 +50,8 @@ app.post('/upload', upload.single('avatar'), (req, res) => {
     res.send({msg: 'File uploaded successfully', url: req.file.location})
 })
 ```
+## Inspired by
+https://medium.com/joor-engineering/setting-up-a-local-aws-s3-environment-for-development-a-step-by-step-guide-573353200d32
 
 ## Useful links
 - https://docs.localstack.cloud/user-guide/aws/s3/
