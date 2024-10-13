@@ -1,6 +1,9 @@
 # Localstack with S3
 Use this repo to quickly spin up a localstack container with S3. Useful to locally debug projects which use S3 in production.
 
+## Prerequisites
+- Docker installed
+
 ## Usage
 0. Modify `init/.env` and `aws/config` and `aws/credentials` to your needs.
 1. Run `docker compose up`, done!
