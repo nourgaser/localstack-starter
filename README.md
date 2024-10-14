@@ -53,6 +53,9 @@ app.post('/upload', upload.single('avatar'), (req, res) => {
 ## Inspired by
 https://medium.com/joor-engineering/setting-up-a-local-aws-s3-environment-for-development-a-step-by-step-guide-573353200d32
 
+## Known issues
+For the Node.js snippet above, the resultant file url could be something like `http://bucketName.s3.localhost/key`, which is missing the key! As a work around, you might need to manually construct the url instead of returning `file.location`. A better solution is yet to be found.
+
 ## Useful links
 - https://docs.localstack.cloud/user-guide/aws/s3/
 - https://www.npmjs.com/package/multer
